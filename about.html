@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+        text-decoration: none;
+        
+    }
+    :root{
+        --text-color:#fff;
+        --first-bg-color:#060914;
+        --second-bg-color:#262b40;
+        --btn-color:#59b2f4;
+    }
+    
+    .header {
+        display:flex;
+        justify-content: space-between;
+        min-width:100vw;
+        background-color:var(--first-bg-color);
+        padding:1rem 9%;
+        border:2px solid white;
+        position:fixed;
+        
+    }
+    .header a{
+        color: #fff;
+    }
+    .navbar{
+        display:flex;
+        justify-content: space-around;
+        width:45%
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+    .navbar a{
+        font-weight: 700;
+        font-size: 1rem; 
+    }
+    .about{
+        padding:10rem;
+        background-color: var(--first-bg-color);
+        color: var(--text-color);
+        display: flex;      
+    }
+    .img img{
+        border-radius:1rem;
+        border:2px var(--btn-color) solid;
+        width:200px;
+        height:200px;
+       
+        
+    }
+    .me{
+       margin-left:10rem;
+        text-align: left;
+    }
+    .me h2{
+        margin-top: 0.4rem;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .me h2 span{
+        color: var(--btn-color);
+    }
+    .me h3{
+        margin-top: 0.3rem;
+        font-size: 100;
+        font-style: none;
+    }
+    .me p{
+        margin-top: 0.5rem;
+        line-height:1.3rem;
+        margin-bottom:1.5rem;
+    }
+    .btn{
+        background-color: var(--btn-color);
+        padding:0.7rem 2rem;
+        border-radius: 3rem;
+        box-shadow: 0 0 2rem var(--btn-color);
+        font-weight: 600;
+        
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <a href="portfolio" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">MySkills</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+    <section class="about">
+        <div class="img">
+           <img src="mine.jpg.jpeg">
+        </div>
+        <div class="me">
+            <h2>About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>A motivated Computer Science and Engineering graduate (2025) with strong skills in Python, SQL , HTML, CSS.Certified in Full Stack Development, Artificial Intelligence, and NPTEL courses, with practical internship experience. Passionate about applying problem-solving, software development, and AI techniques to contribute to organizational success. </p>
+            <a href="" class="btn">Readmore</a>
+        </div>
+    </section>
+</body>
+</html>
